@@ -1,0 +1,295 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run-High: 교내 러닝 마일리지 시스템</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap');
+        body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-news-slide { display: none; }
+        .card-news-slide.active { display: block; animation: fadeIn 0.5s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="pb-24">
+
+    <!-- Header -->
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
+            <h1 class="text-xl font-extrabold gradient-text">RUN-HIGH</h1>
+            <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-gray-600">김철수 학생</span>
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Area -->
+    <main class="max-w-md mx-auto px-4 pt-6 space-y-8">
+        
+        <!-- Section 1: 카드뉴스 홍보 -->
+        <section>
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-bold text-gray-800">캠페인 알아보기</h2>
+                <span id="slide-counter" class="text-xs text-gray-500">1 / 8</span>
+            </div>
+            <div class="relative bg-white rounded-2xl shadow-lg overflow-hidden aspect-square border">
+                <div class="card-news-slide active p-8 flex flex-col items-center justify-center text-center h-full bg-blue-600 text-white">
+                    <i class="fa-solid fa-heart-pulse text-6xl mb-4 animate-bounce"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">우리 학교 학생들,<br>이대로 괜찮을까?</h3>
+                    <p class="opacity-90">책상 앞 8시간, 운동 시간은 하루 20분 미만... 우리의 건강 신호를 확인하세요.</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-indigo-600 text-white">
+                    <i class="fa-solid fa-brain text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">달리면 머리가 좋아진다?</h3>
+                    <p class="opacity-90 leading-relaxed text-sm">러닝은 뇌세포 성장을 돕는 BDNF 단백질을 분비시켜 <br><strong class="text-yellow-300 font-bold text-lg">기억력과 암기력</strong>을 폭발적으로 높여줍니다!</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-pink-500 text-white">
+                    <i class="fa-solid fa-face-smile-beam text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">시험 스트레스 탈출구</h3>
+                    <p class="opacity-90 leading-relaxed text-sm">달릴 때 분비되는 엔도르핀은 우울감을 날리고 <br><strong class="text-yellow-200 font-bold text-lg">'러너스 하이'</strong>라는 최고의 행복감을 선물합니다.</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-slate-800 text-white">
+                    <i class="fa-solid fa-moon text-6xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">꿀잠이 성적을 만든다</h3>
+                    <p class="opacity-90 leading-relaxed text-sm">낮 시간의 가벼운 러닝은 밤의 숙면을 유도하여 <br><strong class="text-cyan-300 font-bold text-lg">다음날 수업 집중도</strong>를 최상으로 유지해줘요.</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-cyan-500 text-white">
+                    <i class="fa-solid fa-mobile-screen-button text-6xl mb-4 text-white"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">스마트워치 보급 사업</h3>
+                    <p class="opacity-90">활동 데이터 수집을 위해 학교에서 스마트워치를 무상 대여해 드립니다.</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-purple-500 text-white">
+                    <i class="fa-solid fa-list-ol text-6xl mb-4 text-white"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">우리 반 랭킹은?</h3>
+                    <p class="opacity-90">개인 랭킹은 물론, 우리 반 친구들과 힘을 합쳐 <br>최고의 '에너제틱 학급'에 도전하세요!</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-orange-400 text-white">
+                    <i class="fa-solid fa-trophy text-6xl mb-4 text-white"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">포인트가 상품으로!</h3>
+                    <p class="opacity-90">땀 흘린 만큼 쌓이는 마일리지로 매점 쿠폰과 학급 간식권을 획득하세요.</p>
+                </div>
+                <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-emerald-500 text-white">
+                    <i class="fa-solid fa-shoe-prints text-6xl mb-4 text-white"></i>
+                    <h3 class="text-2xl font-bold mb-2 text-white">함께 달려볼까요?</h3>
+                    <p class="opacity-90 font-medium">건강한 신체에 건전한 정신이 깃듭니다. <br>지금 바로 가입하세요!</p>
+                </div>
+                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-2 rounded-full text-white transition-all"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 p-2 rounded-full text-white transition-all"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Section 2: 내 활동 요약 -->
+        <section class="bg-white p-6 rounded-2xl border shadow-sm">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">나의 마일리지</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                    <p class="text-xs text-blue-600 font-semibold mb-1 uppercase">Distance</p>
+                    <p class="text-2xl font-bold text-blue-900">12.5 <span class="text-sm font-medium">km</span></p>
+                </div>
+                <div class="bg-cyan-50 p-4 rounded-xl border border-cyan-100">
+                    <p class="text-xs text-cyan-600 font-semibold mb-1 uppercase">Points</p>
+                    <p class="text-2xl font-bold text-cyan-900">4,200 <span class="text-sm font-medium">P</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: 추천 러닝 코스 (New) -->
+        <section>
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-bold text-gray-800">친구들이 뽑은 핫 코스</h2>
+                <button class="text-xs text-blue-600 font-bold">전체보기</button>
+            </div>
+            <div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
+                <!-- Course Card 1 -->
+                <div class="flex-shrink-0 w-64 bg-white rounded-2xl border shadow-sm overflow-hidden group">
+                    <div class="h-32 bg-gray-200 relative bg-[url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=400')] bg-cover bg-center">
+                        <div class="absolute top-2 right-2 bg-white/90 px-2 py-1 rounded-lg text-[10px] font-bold text-blue-600">인기 1위</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-sm">학교 운동장 무한 루프</h3>
+                            <span class="text-[10px] bg-green-100 text-green-600 px-1.5 py-0.5 rounded font-bold">초급</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot mr-1"></i>교내 운동장 (400m 트랙)</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="flex -space-x-2">
+                                    <div class="w-5 h-5 rounded-full border-2 border-white bg-blue-400"></div>
+                                    <div class="w-5 h-5 rounded-full border-2 border-white bg-red-400"></div>
+                                    <div class="w-5 h-5 rounded-full border-2 border-white bg-green-400"></div>
+                                </div>
+                                <span class="text-[10px] text-gray-400">+124명 완료</span>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">1.2km</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="flex-shrink-0 w-64 bg-white rounded-2xl border shadow-sm overflow-hidden group">
+                    <div class="h-32 bg-gray-200 relative bg-[url('https://images.unsplash.com/photo-1513594422441-240156d60c6d?auto=format&fit=crop&q=80&w=400')] bg-cover bg-center">
+                        <div class="absolute top-2 right-2 bg-white/90 px-2 py-1 rounded-lg text-[10px] font-bold text-orange-600">추천</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-sm">등굣길 벚꽃 가로수길</h3>
+                            <span class="text-[10px] bg-yellow-100 text-yellow-600 px-1.5 py-0.5 rounded font-bold">중급</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot mr-1"></i>정문 앞 ~ 공원 입구</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="flex -space-x-2">
+                                    <div class="w-5 h-5 rounded-full border-2 border-white bg-purple-400"></div>
+                                    <div class="w-5 h-5 rounded-full border-2 border-white bg-yellow-400"></div>
+                                </div>
+                                <span class="text-[10px] text-gray-400">+56명 완료</span>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">2.5km</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="flex-shrink-0 w-64 bg-white rounded-2xl border shadow-sm overflow-hidden group">
+                    <div class="h-32 bg-gray-200 relative bg-[url('https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?auto=format&fit=crop&q=80&w=400')] bg-cover bg-center text-white">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute top-2 right-2 bg-white/90 px-2 py-1 rounded-lg text-[10px] font-bold text-indigo-600">밤 러닝</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-sm">야간 조명 산책로</h3>
+                            <span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-bold">고급</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot mr-1"></i>학교 뒤편 생태로</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div class="flex -space-x-2">
+                                    <div class="w-5 h-5 rounded-full border-2 border-white bg-gray-400"></div>
+                                </div>
+                                <span class="text-[10px] text-gray-400">+12명 완료</span>
+                            </div>
+                            <span class="text-xs font-bold text-gray-700">5.0km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: 실시간 랭킹 -->
+        <section>
+            <div class="flex items-center gap-2 mb-4">
+                <h2 class="text-lg font-bold text-gray-800">실시간 랭킹</h2>
+                <span class="bg-red-100 text-red-600 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Live</span>
+            </div>
+            <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
+                <div class="flex border-b">
+                    <button class="flex-1 py-3 text-sm font-bold text-blue-600 border-b-2 border-blue-600">개인전</button>
+                    <button class="flex-1 py-3 text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors">학급전</button>
+                </div>
+                <div class="divide-y">
+                    <div class="flex items-center p-4 gap-4">
+                        <span class="font-bold text-yellow-500 w-4 text-center">1</span>
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex-shrink-0 flex items-center justify-center text-blue-500 font-bold text-xs">IK</div>
+                        <div class="flex-1">
+                            <p class="text-sm font-bold">이강인 (2-3)</p>
+                            <p class="text-xs text-gray-500">42.8 km</p>
+                        </div>
+                        <i class="fa-solid fa-crown text-yellow-500"></i>
+                    </div>
+                    <div class="flex items-center p-4 gap-4 bg-blue-50/50">
+                        <span class="font-bold text-gray-700 w-4 text-center text-xs">12</span>
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">ME</div>
+                        <div class="flex-1">
+                            <p class="text-sm font-bold">김철수 (1-2)</p>
+                            <p class="text-xs text-gray-500">12.5 km</p>
+                        </div>
+                        <div class="text-[10px] text-blue-600 font-bold px-2 py-1 bg-blue-100 rounded">내 순위</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: 포인트 상점 -->
+        <section>
+            <h2 class="text-lg font-bold text-gray-800 mb-4">포인트 상점</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-xl border shadow-sm text-center group">
+                    <div class="bg-orange-100 w-full aspect-square rounded-lg flex items-center justify-center text-orange-500 mb-3 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-cookie-bite text-4xl"></i>
+                    </div>
+                    <p class="text-sm font-bold">매점 간식 쿠폰</p>
+                    <p class="text-xs text-gray-500 mb-3 font-semibold">1,000 P</p>
+                    <button class="w-full bg-blue-600 text-white py-2.5 rounded-lg text-xs font-bold active:scale-95 transition-transform">교환하기</button>
+                </div>
+                <div class="bg-white p-4 rounded-xl border shadow-sm text-center group">
+                    <div class="bg-purple-100 w-full aspect-square rounded-lg flex items-center justify-center text-purple-500 mb-3 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-users text-4xl"></i>
+                    </div>
+                    <p class="text-sm font-bold">학급 피자 세트</p>
+                    <p class="text-xs text-gray-500 mb-3 font-semibold">30,000 P</p>
+                    <button class="w-full bg-gray-200 text-gray-400 py-2.5 rounded-lg text-xs font-bold cursor-not-allowed">포인트 부족</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t py-3 shadow-lg z-50">
+        <div class="max-w-md mx-auto flex justify-around items-center">
+            <button class="flex flex-col items-center text-blue-600">
+                <i class="fa-solid fa-house text-xl"></i>
+                <span class="text-[10px] mt-1 font-bold">홈</span>
+            </button>
+            <button class="flex flex-col items-center text-gray-400">
+                <i class="fa-solid fa-map-location-dot text-xl"></i>
+                <span class="text-[10px] mt-1 font-medium font-bold text-blue-600">코스</span>
+            </button>
+            <button class="flex flex-col items-center text-gray-400">
+                <i class="fa-solid fa-person-running text-xl"></i>
+                <span class="text-[10px] mt-1 font-medium">시작</span>
+            </button>
+            <button class="flex flex-col items-center text-gray-400">
+                <i class="fa-solid fa-gift text-xl"></i>
+                <span class="text-[10px] mt-1 font-medium">스토어</span>
+            </button>
+        </div>
+    </nav>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.card-news-slide');
+        const counter = document.getElementById('slide-counter');
+
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            counter.innerText = `${currentSlide + 1} / ${slides.length}`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlide();
+        }
+
+        setInterval(nextSlide, 6000);
+    </script>
+
+</body>
+</html>
+
+```
