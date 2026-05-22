@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -21,7 +22,6 @@
 </head>
 <body class="pb-24">
 
-    <!-- Header -->
     <header class="bg-white border-b sticky top-0 z-40 shadow-sm">
         <div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
             <h1 class="text-xl font-extrabold gradient-text">RUN-HIGH</h1>
@@ -34,112 +34,127 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main class="max-w-md mx-auto px-4 pt-6">
         
-        <!-- ==============================================
-             [1] HOME VIEW
-        =============================================== -->
         <div id="view-home" class="page-view active space-y-8">
-            <!-- Section 1: 카드뉴스 홍보 -->
             <section>
                 <div class="flex items-center justify-between mb-4">
                     <h2 class="text-lg font-bold text-gray-800">캠페인 알아보기</h2>
                     <span id="slide-counter" class="text-xs text-gray-500 font-medium bg-gray-100 px-2 py-1 rounded-full">1 / 8</span>
                 </div>
                 <div class="relative bg-white rounded-2xl shadow-lg overflow-hidden aspect-[4/5] border">
-                    <div class="card-news-slide active p-8 flex flex-col items-center justify-center text-center h-full bg-blue-600 text-white">
-                        <i class="fa-solid fa-heart-pulse text-5xl mb-4 animate-bounce"></i>
-                        <h3 class="text-2xl font-extrabold mb-3 text-white">우리 학교 학생들,<br>이대로 괜찮을까?</h3>
-                        <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm mt-2">
-                            <ul class="text-sm space-y-2 opacity-95">
-                                <li><i class="fa-solid fa-triangle-exclamation text-yellow-300 w-5"></i> 하루 평균 앉아있는 시간 <b>8시간 이상</b></li>
-                                <li><i class="fa-solid fa-triangle-exclamation text-yellow-300 w-5"></i> 권장 고강도 신체활동 <b>턱없이 부족</b></li>
-                                <li><i class="fa-solid fa-triangle-exclamation text-yellow-300 w-5"></i> <b>결과:</b> 거북목, 체력 저하, 만성 피로와 무기력증</li>
-                            </ul>
+                    
+                    <div class="card-news-slide active p-8 flex flex-col items-center justify-center text-center h-full bg-slate-900 text-white">
+                        <i class="fa-solid fa-chart-line text-5xl mb-4 text-red-400"></i>
+                        <span class="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">청소년 건강 지표 01</span>
+                        <h3 class="text-2xl font-extrabold mb-3 text-white">하루 60분, 주 5일 이상<br>움직이고 계신가요?</h3>
+                        <div class="bg-white/10 p-4 rounded-xl w-full text-left backdrop-blur-sm mt-2 text-sm space-y-2">
+                            <p class="font-medium text-gray-300">평상시보다 숨이 찬 신체활동 실천율</p>
+                            <div class="flex justify-between items-center pt-1">
+                                <span>남학생 실천율: <b class="text-yellow-300">24.5%</b></span>
+                                <span>여학생 실천율: <b class="text-pink-300">8.5%</b></span>
+                            </div>
+                            <p class="text-xs text-red-300 border-t border-white/10 pt-2"><i class="fa-solid fa-arrow-trend-down mr-1"></i>지난해 대비 남녀 학생 모두 소폭 감소 추세</p>
                         </div>
                     </div>
+
+                    <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-indigo-900 text-white">
+                        <i class="fa-solid fa-heart-pulse text-5xl mb-4 text-cyan-400"></i>
+                        <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-1">청소년 건강 지표 02</span>
+                        <h3 class="text-2xl font-extrabold mb-3 text-white">땀 흘리는 즐거움을<br>잊어버린 우리들</h3>
+                        <div class="bg-white/10 p-4 rounded-xl w-full text-left backdrop-blur-sm mt-2 text-sm space-y-2">
+                            <p class="font-medium text-gray-300">주 3일 이상 고강도 신체활동(20분 이상)</p>
+                            <div class="flex justify-between items-center pt-1">
+                                <span>남학생: <b class="text-cyan-300">50.0%</b></span>
+                                <span>여학생: <b class="text-pink-300">26.0%</b></span>
+                            </div>
+                            <p class="text-xs text-orange-300 border-t border-white/10 pt-2"><i class="fa-solid fa-triangle-exclamation mr-1"></i>전년도(남 53.5%, 여 28.8%) 대비 큰 폭으로 감소</p>
+                        </div>
+                    </div>
+
+                    <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-blue-950 text-white">
+                        <i class="fa-solid fa-dumbbell text-5xl mb-4 text-emerald-400"></i>
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">청소년 건강 지표 03</span>
+                        <h3 class="text-2xl font-extrabold mb-3 text-white">성장기 뼈와 근육에<br>자극이 부족합니다</h3>
+                        <div class="bg-white/10 p-4 rounded-xl w-full text-left backdrop-blur-sm mt-2 text-sm space-y-2">
+                            <p class="font-medium text-gray-300">주 3일 이상 근력강화운동 실천율</p>
+                            <div class="flex justify-between items-center pt-1">
+                                <span>남학생: <b class="text-emerald-300">37.7%</b></span>
+                                <span>여학생: <b class="text-pink-300">10.3%</b></span>
+                            </div>
+                            <p class="text-xs text-gray-300 border-t border-white/10 pt-2">매년 발전 없이 정체되어 있는 심각한 수준</p>
+                        </div>
+                    </div>
+
+                    <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-blue-600 text-white">
+                        <i class="fa-solid fa-bolt text-5xl mb-4 text-yellow-300"></i>
+                        <span class="text-xs font-bold text-yellow-300 uppercase tracking-widest mb-1">WHY RUNNING?</span>
+                        <h3 class="text-2xl font-extrabold mb-2 text-white">왜 하필 '러닝' 일까요?</h3>
+                        <p class="font-bold text-blue-100 mb-4 text-xs">세 가지 지표를 단 하나의 운동으로 해결</p>
+                        <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
+                            <p><i class="fa-solid fa-check text-yellow-300 w-5"></i> <b>고강도 유산소:</b> 하루 20분만 뛰어도 지표 충족</p>
+                            <p><i class="fa-solid fa-check text-yellow-300 w-5"></i> <b>전신 근력 강화:</b> 하체 및 코어 근육 동시 발달</p>
+                            <p><i class="fa-solid fa-check text-yellow-300 w-5"></i> <b>최고의 효율성:</b> 특별한 장비 없이 즉시 시작 가능</p>
+                        </div>
+                    </div>
+
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-indigo-600 text-white">
-                        <i class="fa-solid fa-brain text-5xl mb-4"></i>
-                        <h3 class="text-2xl font-extrabold mb-2 text-white">달리면 머리가 좋아진다?</h3>
-                        <p class="font-bold text-yellow-300 mb-4 text-sm">운동과 학업은 반비례가 아닙니다!</p>
+                        <i class="fa-solid fa-brain text-5xl mb-4 text-purple-300"></i>
+                        <span class="text-xs font-bold text-purple-300 uppercase tracking-widest mb-1">SCIENCE</span>
+                        <h3 class="text-2xl font-extrabold mb-2 text-white">달리면 머리가 좋아진다</h3>
+                        <p class="font-bold text-yellow-300 mb-4 text-xs">운동과 학업은 반비례가 아닙니다!</p>
                         <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
                             <p><i class="fa-solid fa-check text-green-300 w-5"></i> 심박수가 오르면 뇌로 가는 혈류량 증가</p>
-                            <p><i class="fa-solid fa-check text-green-300 w-5"></i> 뇌세포 성장을 돕는 <b>BDNF 단백질</b> 폭발적 분비</p>
-                            <p><i class="fa-solid fa-check text-green-300 w-5"></i> 해마가 활성화되어 <b>장기 기억력 및 암기력 향상</b></p>
+                            <p><i class="fa-solid fa-check text-green-300 w-5"></i> 뇌세포 성장을 돕는 <b>BDNF 단백질</b> 분비</p>
+                            <p><i class="fa-solid fa-check text-green-300 w-5"></i> 해마가 활성화되어 <b>장기 기억력 향상</b></p>
                         </div>
                     </div>
+
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-pink-500 text-white">
                         <i class="fa-solid fa-face-smile-beam text-5xl mb-4"></i>
+                        <span class="text-xs font-bold text-pink-200 uppercase tracking-widest mb-1">MENTAL CARE</span>
                         <h3 class="text-2xl font-extrabold mb-2 text-white">시험 스트레스 탈출구</h3>
-                        <p class="font-bold text-yellow-200 mb-4 text-sm">하루 15분 러닝의 기적</p>
                         <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
                             <p><i class="fa-solid fa-fire text-orange-300 w-5"></i> 스트레스 호르몬 '코르티솔' 수치 감소</p>
-                            <p><i class="fa-solid fa-face-laugh-squint text-yellow-300 w-5"></i> <b>러너스 하이(Runner's High):</b> 강력한 엔도르핀 분비</p>
-                            <p><i class="fa-solid fa-shield-heart text-pink-300 w-5"></i> 성적 압박감과 우울감을 이겨내는 <b>마음 근육 강화</b></p>
+                            <p><i class="fa-solid fa-face-laugh-squint text-yellow-300 w-5"></i> <b>러너스 하이:</b> 행복감을 주는 엔도르핀 분비</p>
+                            <p><i class="fa-solid fa-shield-heart text-pink-300 w-5"></i> 압박감을 이겨내는 강력한 <b>마음 근육 형성</b></p>
                         </div>
                     </div>
-                    <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-slate-800 text-white">
-                        <i class="fa-solid fa-moon text-5xl mb-4 text-yellow-200"></i>
-                        <h3 class="text-2xl font-extrabold mb-2 text-white">꿀잠이 성적을 만든다</h3>
-                        <p class="font-bold text-cyan-300 mb-4 text-sm">수업 시간 졸음, 이제 안녕!</p>
-                        <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
-                            <p><i class="fa-regular fa-clock text-blue-300 w-5"></i> 낮 시간의 햇빛과 유산소 운동은 <b>수면 호르몬 정상화</b>에 도움</p>
-                            <p><i class="fa-solid fa-bed text-blue-300 w-5"></i> <b>깊은 숙면(논렘수면)</b> 시간 증가</p>
-                            <p><i class="fa-solid fa-bolt text-blue-300 w-5"></i> 다음 날 아침 <b>최상의 컨디션과 수업 집중도</b> 유지</p>
-                        </div>
-                    </div>
-                    <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-cyan-600 text-white">
-                        <i class="fa-solid fa-stopwatch text-5xl mb-4 text-white"></i>
-                        <h3 class="text-2xl font-extrabold mb-2 text-white">장비 걱정 ZERO!</h3>
-                        <p class="font-bold text-yellow-200 mb-4 text-sm">학교에서 지원하는 스마트워치 대여</p>
-                        <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
-                            <p><i class="fa-solid fa-hand-holding-heart text-pink-300 w-5"></i> <b>무상 대여:</b> 보건실에서 학생증만 내면 누구나 대여 가능</p>
-                            <p><i class="fa-solid fa-rotate text-blue-300 w-5"></i> <b>자동 동기화:</b> 뛴 거리, 심박수, 칼로리가 실시간 전송</p>
-                            <p><i class="fa-solid fa-mobile-screen text-blue-300 w-5"></i> 스마트폰 앱만으로도 참여 가능!</p>
-                        </div>
-                    </div>
-                    <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-purple-600 text-white">
-                        <i class="fa-solid fa-users text-5xl mb-4 text-white"></i>
-                        <h3 class="text-2xl font-extrabold mb-2 text-white">우리 반 랭킹전</h3>
-                        <p class="font-bold text-yellow-300 mb-4 text-sm">혼자 뛰면 금방 지치지만, 함께 뛰면 재밌다!</p>
-                        <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
-                            <p><i class="fa-solid fa-ranking-star text-yellow-300 w-5"></i> <b>개인전:</b> 주간 최고 러너에게 '이달의 러너' 뱃지 부여</p>
-                            <p><i class="fa-solid fa-flag text-red-300 w-5"></i> <b>학급전:</b> 반 전체 누적 거리를 합산해 매월 '에너제틱 학급' 선정</p>
-                            <p><i class="fa-solid fa-people-group text-blue-300 w-5"></i> 친구들과 소속감을 키우는 새로운 놀이 문화</p>
-                        </div>
-                    </div>
+
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-orange-500 text-white">
                         <i class="fa-solid fa-gift text-5xl mb-4 text-white"></i>
-                        <h3 class="text-2xl font-extrabold mb-2 text-white">땀은 배신하지 않는다</h3>
-                        <p class="font-bold text-yellow-200 mb-4 text-sm">포인트 모아 진짜 혜택으로 교환하세요!</p>
+                        <span class="text-xs font-bold text-yellow-200 uppercase tracking-widest mb-1">BENEFIT</span>
+                        <h3 class="text-2xl font-extrabold mb-2 text-white">땀방울을 모아 매점으로!</h3>
+                        <p class="font-bold text-yellow-200 mb-4 text-xs">움직인 만큼 돌려받는 확실한 보상</p>
                         <div class="bg-white/20 p-4 rounded-xl w-full text-left backdrop-blur-sm text-sm space-y-2">
-                            <p><i class="fa-solid fa-coins text-yellow-300 w-5"></i> <b>적립:</b> 1km 달성 시 100P, 출석 시 50P 지급</p>
-                            <p><i class="fa-solid fa-cookie-bite text-orange-200 w-5"></i> <b>개인 보상:</b> 매점 빵/음료수 쿠폰, 학용품 교환</p>
-                            <p><i class="fa-solid fa-pizza-slice text-red-300 w-5"></i> <b>학급 보상:</b> 30,000P 모으면 학급 피자 파티 우선권 제공!</p>
+                            <p><i class="fa-solid fa-coins text-yellow-300 w-5"></i> <b>정직한 적립:</b> 1km 달성 시 100P, 출석 시 50P</p>
+                            <p><i class="fa-solid fa-cookie-bite text-orange-200 w-5"></i> <b>개인 보상:</b> 매점 빵, 시원한 이온음료 교환권</p>
+                            <p><i class="fa-solid fa-pizza-slice text-red-300 w-5"></i> <b>학급 보상:</b> 포인트 합산으로 학급 피자 파티 가능</p>
                         </div>
                     </div>
+
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-emerald-500 text-white">
                         <i class="fa-solid fa-shoe-prints text-5xl mb-4 text-white"></i>
-                        <h3 class="text-2xl font-extrabold mb-2 text-white">함께 달려볼까요?</h3>
+                        <span class="text-xs font-bold text-emerald-200 uppercase tracking-widest mb-1">START NOW</span>
+                        <h3 class="text-2xl font-extrabold mb-2 text-white">지금 바로 함께 달려요!</h3>
                         <p class="font-bold text-yellow-200 mb-4 text-sm">가입 즉시 500P 웰컴 포인트 지급!</p>
                         <div class="bg-white/20 p-4 rounded-xl w-full text-center backdrop-blur-sm mt-2">
                             <p class="text-sm font-medium leading-relaxed mb-3">
-                                건강한 신체에 건전한 정신이 깃듭니다.<br>
-                                더 이상 미루지 말고, 오늘 당장 하교 길부터<br>
-                                가볍게 시작해 보세요.
+                                움직이지 않는 75%의 남학생, 91%의 여학생을 넘어<br>
+                                오늘부터 건강한 상위 클래스가 되어보세요.<br>
+                                하굣길 트랙 한 바퀴부터 시작합니다.
                             </p>
                             <button onclick="switchView('start')" class="bg-white text-emerald-600 font-bold py-2 px-6 rounded-full w-full shadow hover:bg-emerald-50 transition-colors">
                                 지금 바로 달리기
                             </button>
                         </div>
                     </div>
+
                     <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 p-3 rounded-full text-white transition-all"><i class="fa-solid fa-chevron-left"></i></button>
                     <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 p-3 rounded-full text-white transition-all"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </section>
 
-            <!-- Section 2: 내 활동 요약 -->
             <section class="bg-white p-6 rounded-2xl border shadow-sm">
                 <h2 class="text-lg font-bold text-gray-800 mb-4">나의 마일리지 요약</h2>
                 <div class="grid grid-cols-2 gap-4">
@@ -154,7 +169,6 @@
                 </div>
             </section>
 
-            <!-- Section 3: 실시간 랭킹 요약 -->
             <section>
                 <div class="flex items-center gap-2 mb-4">
                     <h2 class="text-lg font-bold text-gray-800">실시간 랭킹 Top 3</h2>
@@ -165,7 +179,7 @@
                         <span class="font-black text-yellow-500 w-4 text-center">1</span>
                         <div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://api.dicebear.com/7.x/avataaars/svg?seed=Felix')] bg-cover"></div>
                         <div class="flex-1">
-                            <p class="text-sm font-bold">학생 (2-3)</p>
+                            <p class="text-sm font-bold">학생32 (2-3)</p>
                             <p class="text-xs text-gray-500 font-medium">42.8 km</p>
                         </div>
                         <i class="fa-solid fa-crown text-yellow-500 text-lg"></i>
@@ -174,7 +188,7 @@
                         <span class="font-black text-gray-400 w-4 text-center">2</span>
                         <div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://api.dicebear.com/7.x/avataaars/svg?seed=Son')] bg-cover"></div>
                         <div class="flex-1">
-                            <p class="text-sm font-bold">학생 (3-1)</p>
+                            <p class="text-sm font-bold">문현빈 (3-1)</p>
                             <p class="text-xs text-gray-500 font-medium">38.5 km</p>
                         </div>
                     </div>
@@ -182,7 +196,7 @@
                         <span class="font-black text-blue-700 w-4 text-center text-xs">12</span>
                         <div class="w-10 h-10 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">ME</div>
                         <div class="flex-1">
-                            <p class="text-sm font-bold text-blue-900">홍성민(3-8)</p>
+                            <p class="text-sm font-bold text-blue-900">홍성민 (3-8)</p>
                             <p class="text-xs text-blue-600 font-medium">12.5 km</p>
                         </div>
                         <div class="text-[10px] text-blue-600 font-bold px-2 py-1 bg-blue-100 rounded">내 순위</div>
@@ -191,15 +205,11 @@
             </section>
         </div>
 
-        <!-- ==============================================
-             [2] COURSE VIEW (코스)
-        =============================================== -->
         <div id="view-course" class="page-view space-y-6">
             <h2 class="text-2xl font-extrabold text-gray-800">어디로 뛸까요?</h2>
             <p class="text-sm text-gray-500 -mt-4">친구들이 가장 많이 뛴 코스들을 추천합니다.</p>
             
             <div class="space-y-4">
-                <!-- Course 1 -->
                 <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
                     <div class="h-32 bg-gray-200 relative bg-[url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -219,7 +229,6 @@
                     </div>
                 </div>
 
-                <!-- Course 2 -->
                 <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
                     <div class="h-32 bg-gray-200 relative bg-[url('https://images.unsplash.com/photo-1513594422441-240156d60c6d?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -238,7 +247,6 @@
                     </div>
                 </div>
 
-                <!-- Course 3 -->
                 <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
                     <div class="h-32 bg-gray-200 relative bg-[url('https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?auto=format&fit=crop&q=80&w=600')] bg-cover bg-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -260,12 +268,8 @@
             </div>
         </div>
 
-        <!-- ==============================================
-             [3] START VIEW (러닝 시작 화면)
-        =============================================== -->
         <div id="view-start" class="page-view">
             <div class="bg-white rounded-3xl border shadow-lg overflow-hidden flex flex-col items-center p-8 mt-4">
-                <!-- GPS / Map Placeholder -->
                 <div class="w-full h-48 bg-gray-100 rounded-2xl mb-8 relative overflow-hidden flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=600" alt="Map Placeholder" class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale">
                     <div class="absolute inset-0 bg-blue-500/10"></div>
@@ -275,7 +279,6 @@
                     <span class="absolute bottom-2 left-2 bg-white/80 px-2 py-1 text-[10px] font-bold rounded text-gray-600 shadow">GPS 신호 양호</span>
                 </div>
 
-                <!-- Stats -->
                 <div class="text-center w-full space-y-6">
                     <div>
                         <p class="text-sm text-gray-400 font-bold uppercase tracking-widest mb-1">Distance</p>
@@ -296,7 +299,6 @@
                     </div>
                 </div>
 
-                <!-- Start Button -->
                 <button id="start-running-btn" class="mt-8 w-24 h-24 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-xl flex items-center justify-center text-xl font-black transition-transform active:scale-90 border-4 border-blue-200">
                     START
                 </button>
@@ -304,9 +306,6 @@
             <p class="text-center text-xs text-gray-400 mt-4"><i class="fa-solid fa-circle-info mr-1"></i>달리기 시작 시 스마트폰의 GPS 위치가 기록됩니다.</p>
         </div>
 
-        <!-- ==============================================
-             [4] STORE VIEW (스토어)
-        =============================================== -->
         <div id="view-store" class="page-view space-y-6">
             <div class="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl p-6 text-white shadow-lg">
                 <p class="text-sm font-medium opacity-80 mb-1">나의 땀방울 포인트</p>
@@ -320,7 +319,6 @@
                 <h2 class="text-lg font-bold text-gray-800 mb-4">포인트 상품 교환소</h2>
                 <div class="grid grid-cols-2 gap-4">
                     
-                    <!-- Item 1 -->
                     <div class="bg-white p-4 rounded-xl border shadow-sm flex flex-col group">
                         <div class="bg-blue-50 w-full aspect-square rounded-lg flex items-center justify-center text-blue-500 mb-3 group-hover:scale-105 transition-transform relative overflow-hidden">
                             <i class="fa-solid fa-bottle-water text-4xl"></i>
@@ -333,7 +331,6 @@
                         </div>
                     </div>
 
-                    <!-- Item 2 -->
                     <div class="bg-white p-4 rounded-xl border shadow-sm flex flex-col group">
                         <div class="bg-orange-50 w-full aspect-square rounded-lg flex items-center justify-center text-orange-500 mb-3 group-hover:scale-105 transition-transform">
                             <i class="fa-solid fa-cookie-bite text-4xl"></i>
@@ -346,7 +343,6 @@
                         </div>
                     </div>
 
-                    <!-- Item 3 -->
                     <div class="bg-white p-4 rounded-xl border shadow-sm flex flex-col group">
                         <div class="bg-gray-100 w-full aspect-square rounded-lg flex items-center justify-center text-gray-600 mb-3 group-hover:scale-105 transition-transform">
                             <i class="fa-solid fa-shirt text-4xl"></i>
@@ -359,7 +355,6 @@
                         </div>
                     </div>
 
-                    <!-- Item 4 -->
                     <div class="bg-white p-4 rounded-xl border shadow-sm flex flex-col group relative overflow-hidden">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded z-10">BEST</div>
                         <div class="bg-purple-50 w-full aspect-square rounded-lg flex items-center justify-center text-purple-500 mb-3 group-hover:scale-105 transition-transform">
@@ -373,7 +368,6 @@
                         </div>
                     </div>
                     
-                    <!-- Item 5 (Joke Item) -->
                     <div class="bg-white p-4 rounded-xl border shadow-sm flex flex-col group col-span-2">
                         <div class="flex items-center gap-4">
                             <div class="bg-amber-100 w-20 h-20 flex-shrink-0 rounded-lg flex items-center justify-center text-amber-500">
@@ -396,7 +390,6 @@
 
     </main>
 
-    <!-- Bottom Navigation -->
     <nav class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] z-50 pb-safe">
         <div class="max-w-md mx-auto flex justify-around items-center">
             <button onclick="switchView('home')" id="nav-home" class="nav-btn flex flex-col items-center justify-center w-16 h-12 text-blue-600 transition-colors">
@@ -423,15 +416,12 @@
     <script>
         // --- 네비게이션 및 화면 전환 로직 ---
         function switchView(viewName) {
-            // 모든 뷰 숨기기
             document.querySelectorAll('.page-view').forEach(view => {
                 view.classList.remove('active');
             });
-            // 선택된 뷰 보이기
             document.getElementById('view-' + viewName).classList.add('active');
-            window.scrollTo(0, 0); // 화면 최상단으로 스크롤
+            window.scrollTo(0, 0);
 
-            // 네비게이션 버튼 스타일 초기화 (모두 회색으로)
             document.querySelectorAll('.nav-btn').forEach(btn => {
                 btn.classList.remove('text-blue-600');
                 btn.classList.add('text-gray-400');
@@ -439,17 +429,15 @@
                 btn.querySelector('span').classList.add('font-medium');
             });
 
-            // 선택된 네비게이션 버튼 스타일 활성화 (파란색, 굵게)
             const activeBtn = document.getElementById('nav-' + viewName);
             activeBtn.classList.remove('text-gray-400');
             activeBtn.classList.add('text-blue-600');
             activeBtn.querySelector('span').classList.remove('font-medium');
             activeBtn.querySelector('span').classList.add('font-bold');
             
-            // '시작' 버튼 특별 처리 (가운데 떠있는 재생 버튼)
             const startIconBg = document.querySelector('#nav-start div');
             if(viewName === 'start') {
-                startIconBg.classList.replace('bg-blue-600', 'bg-red-500'); // 활성화 시 빨간색(녹화/러닝중 느낌)으로 변경
+                startIconBg.classList.replace('bg-blue-600', 'bg-red-500');
                 startIconBg.innerHTML = '<i class="fa-solid fa-person-running text-xl"></i>';
             } else {
                 startIconBg.classList.replace('bg-red-500', 'bg-blue-600');
@@ -494,11 +482,10 @@
             slideInterval = setInterval(nextSlide, 6000);
         }
 
-        // 초기 화면 세팅
         updateSlide();
         slideInterval = setInterval(nextSlide, 6000);
         
-        // --- 러닝 시작 버튼 애니메이션 (시각적 피드백) ---
+        // --- 러닝 시작 버튼 애니메이션 ---
         const startBtn = document.getElementById('start-running-btn');
         let isRunning = false;
         if(startBtn) {
@@ -520,3 +507,6 @@
     </script>
 </body>
 </html>
+
+
+```
