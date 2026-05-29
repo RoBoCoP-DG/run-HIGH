@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -21,6 +22,7 @@
 </head>
 <body class="pb-24">
 
+    <!-- Header -->
     <header class="bg-white border-b sticky top-0 z-40 shadow-sm">
         <div class="max-w-md mx-auto px-4 h-16 flex items-center justify-between">
             <h1 class="text-xl font-extrabold gradient-text">RUN-HIGH</h1>
@@ -33,9 +35,14 @@
         </div>
     </header>
 
+    <!-- Main Content Area -->
     <main class="max-w-md mx-auto px-4 pt-6">
         
+        <!-- ==============================================
+             [1] HOME VIEW
+        =============================================== -->
         <div id="view-home" class="page-view active space-y-8">
+            <!-- Section 1: 카드뉴스 홍보 -->
             <section>
                 <div class="flex items-center justify-between mb-4">
                     <h2 class="text-lg font-bold text-gray-800">캠페인 알아보기</h2>
@@ -43,6 +50,7 @@
                 </div>
                 <div class="relative bg-white rounded-2xl shadow-lg overflow-hidden aspect-[4/5] border">
                     
+                    <!-- Slide 1: 종합 신체활동 실천율 지표 -->
                     <div class="card-news-slide active p-8 flex flex-col items-center justify-center text-center h-full bg-slate-900 text-white">
                         <i class="fa-solid fa-chart-line text-5xl mb-4 text-red-400"></i>
                         <span class="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">청소년 건강 지표 01</span>
@@ -57,6 +65,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 2: 고강도 신체활동 지표 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-indigo-900 text-white">
                         <i class="fa-solid fa-heart-pulse text-5xl mb-4 text-cyan-400"></i>
                         <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-1">청소년 건강 지표 02</span>
@@ -71,6 +80,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 3: 근력강화운동 지표 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-blue-950 text-white">
                         <i class="fa-solid fa-dumbbell text-5xl mb-4 text-emerald-400"></i>
                         <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">청소년 건강 지표 03</span>
@@ -85,6 +95,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 4: 해결책으로서의 러닝 제시 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-blue-600 text-white">
                         <i class="fa-solid fa-bolt text-5xl mb-4 text-yellow-300"></i>
                         <span class="text-xs font-bold text-yellow-300 uppercase tracking-widest mb-1">WHY RUNNING?</span>
@@ -97,6 +108,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 5: 뇌과학적 장점 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-indigo-600 text-white">
                         <i class="fa-solid fa-brain text-5xl mb-4 text-purple-300"></i>
                         <span class="text-xs font-bold text-purple-300 uppercase tracking-widest mb-1">SCIENCE</span>
@@ -109,6 +121,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 6: 스트레스 해소 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-pink-500 text-white">
                         <i class="fa-solid fa-face-smile-beam text-5xl mb-4"></i>
                         <span class="text-xs font-bold text-pink-200 uppercase tracking-widest mb-1">MENTAL CARE</span>
@@ -120,6 +133,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 7: 보상 및 마일리지 혜택 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-orange-500 text-white">
                         <i class="fa-solid fa-gift text-5xl mb-4 text-white"></i>
                         <span class="text-xs font-bold text-yellow-200 uppercase tracking-widest mb-1">BENEFIT</span>
@@ -132,6 +146,7 @@
                         </div>
                     </div>
 
+                    <!-- Slide 8: 최종 참여 독려 -->
                     <div class="card-news-slide p-8 flex flex-col items-center justify-center text-center h-full bg-emerald-500 text-white">
                         <i class="fa-solid fa-shoe-prints text-5xl mb-4 text-white"></i>
                         <span class="text-xs font-bold text-emerald-200 uppercase tracking-widest mb-1">START NOW</span>
@@ -149,11 +164,13 @@
                         </div>
                     </div>
 
+                    <!-- Navigation Arrows -->
                     <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 p-3 rounded-full text-white transition-all"><i class="fa-solid fa-chevron-left"></i></button>
                     <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 p-3 rounded-full text-white transition-all"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </section>
 
+            <!-- Section 2: 내 활동 요약 -->
             <section class="bg-white p-6 rounded-2xl border shadow-sm">
                 <h2 class="text-lg font-bold text-gray-800 mb-4">나의 마일리지 요약</h2>
                 <div class="grid grid-cols-2 gap-4">
@@ -168,6 +185,7 @@
                 </div>
             </section>
 
+            <!-- Section 3: 실시간 랭킹 요약 -->
             <section>
                 <div class="flex items-center gap-2 mb-4">
                     <h2 class="text-lg font-bold text-gray-800">실시간 랭킹 Top 3</h2>
@@ -178,7 +196,7 @@
                         <span class="font-black text-yellow-500 w-4 text-center">1</span>
                         <div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://api.dicebear.com/7.x/avataaars/svg?seed=Felix')] bg-cover"></div>
                         <div class="flex-1">
-                            <p class="text-sm font-bold">학생32 (2-3)</p>
+                            <p class="text-sm font-bold">이강인 (2-3)</p>
                             <p class="text-xs text-gray-500 font-medium">42.8 km</p>
                         </div>
                         <i class="fa-solid fa-crown text-yellow-500 text-lg"></i>
@@ -187,7 +205,7 @@
                         <span class="font-black text-gray-400 w-4 text-center">2</span>
                         <div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://api.dicebear.com/7.x/avataaars/svg?seed=Son')] bg-cover"></div>
                         <div class="flex-1">
-                            <p class="text-sm font-bold">문현빈 (3-1)</p>
+                            <p class="text-sm font-bold">손흥민 (3-1)</p>
                             <p class="text-xs text-gray-500 font-medium">38.5 km</p>
                         </div>
                     </div>
@@ -195,7 +213,7 @@
                         <span class="font-black text-blue-700 w-4 text-center text-xs">12</span>
                         <div class="w-10 h-10 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">ME</div>
                         <div class="flex-1">
-                            <p class="text-sm font-bold text-blue-900">홍성민 (3-8)</p>
+                            <p class="text-sm font-bold text-blue-900">김철수 (1-2)</p>
                             <p class="text-xs text-blue-600 font-medium">12.5 km</p>
                         </div>
                         <div class="text-[10px] text-blue-600 font-bold px-2 py-1 bg-blue-100 rounded">내 순위</div>
@@ -204,6 +222,9 @@
             </section>
         </div>
 
+        <!-- ==============================================
+             [2] COURSE VIEW (코스)
+        =============================================== -->
         <div id="view-course" class="page-view space-y-6">
             <h2 class="text-2xl font-extrabold text-gray-800">어디로 뛸까요?</h2>
             <p class="text-sm text-gray-500 -mt-4">친구들이 가장 많이 뛴 코스들을 추천합니다.</p>
@@ -267,6 +288,9 @@
             </div>
         </div>
 
+        <!-- ==============================================
+             [3] START VIEW (러닝 시작 화면)
+        =============================================== -->
         <div id="view-start" class="page-view">
             <div class="bg-white rounded-3xl border shadow-lg overflow-hidden flex flex-col items-center p-8 mt-4">
                 <div class="w-full h-48 bg-gray-100 rounded-2xl mb-8 relative overflow-hidden flex items-center justify-center">
@@ -305,6 +329,9 @@
             <p class="text-center text-xs text-gray-400 mt-4"><i class="fa-solid fa-circle-info mr-1"></i>달리기 시작 시 스마트폰의 GPS 위치가 기록됩니다.</p>
         </div>
 
+        <!-- ==============================================
+             [4] STORE VIEW (스토어)
+        =============================================== -->
         <div id="view-store" class="page-view space-y-6">
             <div class="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl p-6 text-white shadow-lg">
                 <p class="text-sm font-medium opacity-80 mb-1">나의 땀방울 포인트</p>
@@ -389,6 +416,7 @@
 
     </main>
 
+    <!-- Bottom Navigation -->
     <nav class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] z-50 pb-safe">
         <div class="max-w-md mx-auto flex justify-around items-center">
             <button onclick="switchView('home')" id="nav-home" class="nav-btn flex flex-col items-center justify-center w-16 h-12 text-blue-600 transition-colors">
@@ -448,7 +476,6 @@
         let currentSlide = 0;
         const slides = document.querySelectorAll('.card-news-slide');
         const counter = document.getElementById('slide-counter');
-        let slideInterval;
 
         function updateSlide() {
             slides.forEach((slide, index) => {
@@ -467,22 +494,15 @@
         function nextSlide() {
             currentSlide = (currentSlide + 1) % slides.length;
             updateSlide();
-            resetInterval();
         }
 
         function prevSlide() {
             currentSlide = (currentSlide - 1 + slides.length) % slides.length;
             updateSlide();
-            resetInterval();
         }
 
-        function resetInterval() {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(nextSlide, 6000);
-        }
-
+        // 초기 화면 세팅 (자동 넘김 타이머 setInterval 구문은 제거됨)
         updateSlide();
-        slideInterval = setInterval(nextSlide, 6000);
         
         // --- 러닝 시작 버튼 애니메이션 ---
         const startBtn = document.getElementById('start-running-btn');
@@ -506,6 +526,5 @@
     </script>
 </body>
 </html>
-
 
 ```
